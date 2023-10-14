@@ -22,6 +22,11 @@ An IDE that supports Type script type script plugin
 npx playwright install to install web drivers and any packages
 
 # Cypress
+you need npm and node installed
+npx cypress open --first time
+npm install cypress --save-dev
+
+
 
 
 
