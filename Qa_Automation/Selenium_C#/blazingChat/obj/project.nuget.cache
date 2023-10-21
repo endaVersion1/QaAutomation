@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "XS/ffylCf9YnGQ1NPDUnxll1hIxYkpUeVlmvhOPW1gvYn1Iwd6ehHd85kqNDtlUqQt4Sh+yfPZdcV2AhhQCaDg==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\BrodyE\\Qa_Workshop_03_11_23\\QaAutomation\\Qa_Automation\\Selenium_C#\\blazingChat\\blazingChat.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BrodyE\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\BrodyE\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\BrodyE\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\BrodyE\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\BrodyE\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\BrodyE\\.nuget\\packages\\selenium.webdriver\\4.14.0\\selenium.webdriver.4.14.0.nupkg.sha512",
+    "C:\\Users\\BrodyE\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Applitools. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org",
+      "libraryId": "Applitools",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
+}

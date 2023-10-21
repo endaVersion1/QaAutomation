@@ -1,0 +1,10 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="88.777274">
+<testsuite name="blazingchatTest.spec.ts" timestamp="2023-10-21T13:39:08.507Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="49.115" errors="0">
+<testcase name="Open blazing Chat › Open page and Wait" classname="blazingchatTest.spec.ts" time="49.115">
+</testcase>
+</testsuite>
+<testsuite name="blazingchatTest.spec.ts" timestamp="2023-10-21T13:39:08.507Z" hostname="Microsoft Edge" tests="1" failures="0" skipped="0" time="49.868" errors="0">
+<testcase name="Open blazing Chat › Open page and Wait" classname="blazingchatTest.spec.ts" time="49.868">
+</testcase>
+</testsuite>
+</testsuites>
