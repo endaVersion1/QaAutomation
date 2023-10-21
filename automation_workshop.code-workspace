@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "Selenium_C#"
+		},
+		{
+			"path": "Selenium_Java"
+		},
+		{
+			"path": "PlayWright_TypeScript"
+		},
+		{
+			"path": "Cypress_JavaScript"
+		},
+		{
+			"path": "Pipeline_Scripts"
+		}
+	],
+	"settings": {
+		"git-blame.gitWebUrl": "",
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"DockerRun.DisableDockerrc": true,
+		"java.compile.nullAnalysis.mode": "automatic",
+		"DockerRun.DisableAutoGenerateConfig": true
+	}
+}
