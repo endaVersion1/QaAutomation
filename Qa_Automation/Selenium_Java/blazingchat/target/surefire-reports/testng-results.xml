@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-21T13:24:28 BST" name="Surefire suite" finished-at="2023-10-21T13:24:38 BST" duration-ms="10418">
+  <suite started-at="2023-10-26T07:07:49 BST" name="Surefire suite" finished-at="2023-10-26T07:08:06 BST" duration-ms="16568">
     <groups>
     </groups>
-    <test started-at="2023-10-21T13:24:28 BST" name="Surefire test" finished-at="2023-10-21T13:24:38 BST" duration-ms="10418">
+    <test started-at="2023-10-26T07:07:49 BST" name="Surefire test" finished-at="2023-10-26T07:08:06 BST" duration-ms="16568">
       <class name="com.blazinchat.BlazingTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.blazinchat.BlazingTest@662ac478]" started-at="2023-10-21T13:24:28 BST" name="setUp" finished-at="2023-10-21T13:24:34 BST" duration-ms="6112" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.blazinchat.BlazingTest@4e08711f]" started-at="2023-10-26T07:07:54 BST" name="setUp" finished-at="2023-10-26T07:08:00 BST" duration-ms="5944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testOpenLogIn()[pri:0, instance:com.blazinchat.BlazingTest@662ac478]" started-at="2023-10-21T13:24:34 BST" name="testOpenLogIn" finished-at="2023-10-21T13:24:38 BST" duration-ms="3771" status="PASS">
+        <test-method signature="testOpenLogIn()[pri:0, instance:com.blazinchat.BlazingTest@4e08711f]" started-at="2023-10-26T07:08:00 BST" name="testOpenLogIn" finished-at="2023-10-26T07:08:05 BST" duration-ms="4930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenLogIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.blazinchat.BlazingTest@662ac478]" started-at="2023-10-21T13:24:38 BST" name="tearDown" finished-at="2023-10-21T13:24:38 BST" duration-ms="473" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.blazinchat.BlazingTest@4e08711f]" started-at="2023-10-26T07:08:05 BST" name="tearDown" finished-at="2023-10-26T07:08:06 BST" duration-ms="1023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.blazinchat.BlazingTest -->
+      <class name="com.blazinchat.ApiTest">
+        <test-method signature="testApi()[pri:0, instance:com.blazinchat.ApiTest@31190526]" started-at="2023-10-26T07:07:50 BST" name="testApi" finished-at="2023-10-26T07:07:54 BST" duration-ms="4528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApi -->
+      </class> <!-- com.blazinchat.ApiTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

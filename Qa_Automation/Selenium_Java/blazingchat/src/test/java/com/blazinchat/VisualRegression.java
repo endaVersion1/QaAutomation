@@ -22,19 +22,19 @@ public class VisualRegression {
 
         // Initialize the Eyes SDK
         eyes = new Eyes();
-        eyes.setApiKey("zOjE51dXy6haYt31xaI2e3KETIvIP6pnSOXlLez106sHM110");
+        eyes.setApiKey("6y34eXWURq0dop48OAf22DRoSGArUDeRJfJ0jM6EQ2Y110");
     }
 
     @Test
     public void testVisualRegression() {
         // Open the website
-        driver.get("https://www.warhammer-community.com");
+        driver.get("http://www.blazingchat.com");
 
         // Start the visual regression test
-        eyes.open(driver, "Warhammer Community", "Home Page", new RectangleSize(800, 600));
+        eyes.open(driver, "Blazing Chat", "Login Page", new RectangleSize(800, 600));
 
         // Perform visual checks on the page
-        eyes.checkWindow("Home Page");
+        eyes.checkWindow("Login Page");
 
         // Close the visual regression test
         eyes.closeAsync();

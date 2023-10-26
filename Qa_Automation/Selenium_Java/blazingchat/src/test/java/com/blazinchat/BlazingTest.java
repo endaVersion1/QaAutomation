@@ -36,11 +36,10 @@ public class BlazingTest {
        driver.get("http://www.blazingchat.com");
        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-       //Creating a textbox webElement
+       //Creating a webElement
         WebElement element = driver.findElement(By.id("button_login"));
-        //Using sendKeys to write in the textbox
+        //Interacting with web elment
         element.click();
-       
     }
 
     @AfterMethod
