@@ -25,21 +25,49 @@ public class BlazingTest {
 
         // Create a new ChromeDriver instance
         driver = new ChromeDriver();
+         // Set an implicit wait for the driver
+         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
          //maximize window
          driver.manage().window().maximize();
+        
+         // Open the website
+         driver.get("http://www.blazingchat.com");
     }
 
     @Test
-    public void testOpenLogIn()
+    public void testLogIn()
     {
-       // Open the website
-       driver.get("http://www.blazingchat.com");
-       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
        //Creating a webElement
-        WebElement element = driver.findElement(By.id("button_login"));
+        WebElement loginButton  = driver.findElement(By.id("button_login"));
         //Interacting with web elment
-        element.click();
+        loginButton .click();
+
+        WebElement userProfilePicture = driver.findElement(By.cssSelector("img[alt='User Profile Picture']"));
+        WebElement firstNameInput  = driver.findElement(By.cssSelector("input[placeholder='first name']"));
+        WebElement lastNameInput =driver.findElement(By.cssSelector("input[placeholder='last name']"));
+        WebElement emailInput =driver.findElement(By.cssSelector("input[placeholder='email address']"));
+        WebElement aboutMeInput  = driver.findElement(By.cssSelector("input[placeholder='about me']"));
+        WebElement saveButton  = driver.findElement(By.cssSelector("button.btn.btn-primary['Save']"));
+
+         // Get the placeholder text of the input element
+        String placeholderFirstNameText = firstNameInput.getAttribute("placeholder");
+
+
+        //verify the profile
+        Assert.assertTrue(userProfilePicture.isDisplayed(), "User Profile Picture is not visible.");
+        Assert.assertTrue(placeholderFirstNameText.contains("mario"), "Placeholder text does not contain 'mario'");
+
+
+    }
+
+
+    @Test
+    public void testContactList(){
+        // Open the website and Login
+
+        //Select Contact List
+
+        //Verify a list of contacts appear
     }
 
     @AfterMethod

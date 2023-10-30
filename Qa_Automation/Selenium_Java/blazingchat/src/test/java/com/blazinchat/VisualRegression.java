@@ -26,7 +26,7 @@ public class VisualRegression {
     }
 
     @Test
-    public void testVisualRegression() {
+    public void testVisualRegressionLoginPage() {
         // Open the website
         driver.get("http://www.blazingchat.com");
 
@@ -38,6 +38,12 @@ public class VisualRegression {
 
         // Close the visual regression test
         eyes.closeAsync();
+    }
+
+    @Test
+    public void testVisualRegressionCreateAccountPage(){
+        // Open the website
+        driver.get("http://www.blazingchat.com");
     }
 
     @AfterMethod

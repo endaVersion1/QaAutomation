@@ -19,10 +19,15 @@ import org.openqa.selenium.WebElement;
 public class ApiTest {
     private WebDriver driver;
     @Test
-    public void testApi() {
-        RestAssured.baseURI = "https://catfact.ninja/fact";
+    public void testApiGetContacts() {
+        //Login
+
+        //Select Contacts
+
+        //Set UP Api Call
+        RestAssured.baseURI = "https://blazingchatwebapi.azurewebsites.net";
         RequestSpecification httpRequest = RestAssured.given();
-        Response response = httpRequest.get("/");
+        Response response = httpRequest.get("/contacts/getvisiblecontacts?startIndex=0&count=17");
 
         
      // Retrieve the body of the Response
@@ -31,7 +36,7 @@ public class ApiTest {
  }
 
  @Test
- public void testPostAuth(){
+ public void testPostAddUser(){
     // Open the website
        driver.get("http://www.blazingchat.com");
        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
