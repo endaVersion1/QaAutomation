@@ -80,6 +80,12 @@
           "build/NUnit.props": {}
         }
       },
+      "NUnit3TestAdapter/4.2.0": {
+        "type": "package",
+        "build": {
+          "build/netcoreapp2.1/NUnit3TestAdapter.props": {}
+        }
+      },
       "Selenium.WebDriver/4.14.0": {
         "type": "package",
         "dependencies": {
@@ -355,6 +361,31 @@
         "nunit.nuspec"
       ]
     },
+    "NUnit3TestAdapter/4.2.0": {
+      "sha512": "srJGb2SExp0Y77p85cDYl/OlfMjxN/jXPh/CQpQOQWiWpnSSPV9I/jtMNJWr1uzqed23rLYYetGgUrwSZUHgfg==",
+      "type": "package",
+      "path": "nunit3testadapter/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net35/NUnit3.TestAdapter.dll",
+        "build/net35/NUnit3.TestAdapter.pdb",
+        "build/net35/NUnit3TestAdapter.props",
+        "build/net35/nunit.engine.api.dll",
+        "build/net35/nunit.engine.core.dll",
+        "build/net35/nunit.engine.dll",
+        "build/net35/testcentric.engine.metadata.dll",
+        "build/netcoreapp2.1/NUnit3.TestAdapter.dll",
+        "build/netcoreapp2.1/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp2.1/NUnit3TestAdapter.props",
+        "build/netcoreapp2.1/nunit.engine.api.dll",
+        "build/netcoreapp2.1/nunit.engine.core.dll",
+        "build/netcoreapp2.1/nunit.engine.dll",
+        "build/netcoreapp2.1/testcentric.engine.metadata.dll",
+        "nunit3testadapter.4.2.0.nupkg.sha512",
+        "nunit3testadapter.nuspec"
+      ]
+    },
     "Selenium.WebDriver/4.14.0": {
       "sha512": "TQ1JCHdxuac9l4r7yehgvt+5tj6kY5RSfi3RhkEPi/uCp9g/HW1J8CBOOzAu8p5T0ERJbNrGEqYOJu13leZI9Q==",
       "type": "package",
@@ -414,8 +445,8 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Applitools >= 3.75.0",
       "NUnit >= 3.13.3",
+      "NUnit3TestAdapter >= 4.1.1",
       "Selenium.WebDriver >= 4.14.0"
     ]
   },
@@ -464,13 +495,13 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
-          "Applitools": {
-            "target": "Package",
-            "version": "[3.75.0, )"
-          },
           "NUnit": {
             "target": "Package",
             "version": "[3.13.3, )"
+          },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "[4.1.1, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
@@ -499,10 +530,11 @@
   },
   "logs": [
     {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package Applitools. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org",
-      "libraryId": "Applitools",
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "blazingChat depends on NUnit3TestAdapter (>= 4.1.1) but NUnit3TestAdapter 4.1.1 was not found. An approximate best match of NUnit3TestAdapter 4.2.0 was resolved.",
+      "libraryId": "NUnit3TestAdapter",
       "targetGraphs": [
         "net7.0"
       ]

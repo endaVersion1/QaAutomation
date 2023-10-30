@@ -45,13 +45,13 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Applitools": {
-              "target": "Package",
-              "version": "[3.75.0, )"
-            },
             "NUnit": {
               "target": "Package",
               "version": "[3.13.3, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.1.1, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",

@@ -1,6 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using NUnit.Framework;
 
 namespace blazingchat
 {
@@ -25,7 +26,19 @@ namespace blazingchat
             // Wait for a few seconds to see the result (you can replace this with explicit waits)
             System.Threading.Thread.Sleep(5000);
 
-            // Perform further actions on the web page if needed
+            // Login
+            IWebElement loginButton = driver.FindElement(By.Id("button_login"));
+            loginButton.Click();
+            IWebElement h2Element = driver.FindElement(By.TagName("h2"));
+            string actualText = h2Element.Text;
+            Assert.AreEqual("Profile", actualText);
+
+            //Select Contacts
+            IWebElement contacts = driver.FindElement(By.XPath("//a[normalize-space()='Contacts']"));
+            contacts.Click();
+
+//---Code Challenge Check Create account validation--
+            //Select User and verify Not Authorized
 
             // Close the browser window
             driver.Quit();

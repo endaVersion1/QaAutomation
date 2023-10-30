@@ -3,6 +3,7 @@ package com.blazinchat;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -40,24 +41,32 @@ public class BlazingTest {
        //Creating a webElement
         WebElement loginButton  = driver.findElement(By.id("button_login"));
         //Interacting with web elment
-        loginButton .click();
+        loginButton.click();
 
         WebElement userProfilePicture = driver.findElement(By.cssSelector("img[alt='User Profile Picture']"));
         WebElement firstNameInput  = driver.findElement(By.cssSelector("input[placeholder='first name']"));
         WebElement lastNameInput =driver.findElement(By.cssSelector("input[placeholder='last name']"));
         WebElement emailInput =driver.findElement(By.cssSelector("input[placeholder='email address']"));
-        WebElement aboutMeInput  = driver.findElement(By.cssSelector("input[placeholder='about me']"));
-        WebElement saveButton  = driver.findElement(By.cssSelector("button.btn.btn-primary['Save']"));
-
-         // Get the placeholder text of the input element
-        String placeholderFirstNameText = firstNameInput.getAttribute("placeholder");
+        WebElement aboutMeInput  = driver.findElement(By.cssSelector("textarea[placeholder='about me']"));
+        WebElement saveButton = driver.findElement(By.xpath("//button[text()='Save']"));
 
 
         //verify the profile
         Assert.assertTrue(userProfilePicture.isDisplayed(), "User Profile Picture is not visible.");
-        Assert.assertTrue(placeholderFirstNameText.contains("mario"), "Placeholder text does not contain 'mario'");
+        firstNameInput.sendKeys(" Jones");
+        lastNameInput.sendKeys(" Smith");
+        emailInput.sendKeys(" qaauto@version1.com");
+        aboutMeInput.sendKeys(" This Automated !!!");
+        Assert.assertFalse(saveButton.isEnabled(), "Button is enabled when it shouldnt be");
 
+        // Use JavaScript to remove the 'disabled' attribute
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].removeAttribute('disabled')", saveButton);
 
+          // Perform actions with the enabled button (e.g., click it)
+          saveButton.click();
+
+        Assert.assertFalse(saveButton.isEnabled(), "Button is enabled when it shouldnt be");
     }
 
 

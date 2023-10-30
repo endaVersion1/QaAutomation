@@ -48,3 +48,10 @@ C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blaz
 C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blazingChat\obj\Debug\net7.0\blazingChat.pdb
 C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blazingChat\obj\Debug\net7.0\blazingChat.genruntimeconfig.cache
 C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blazingChat\obj\Debug\net7.0\ref\blazingChat.dll
+C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blazingChat\bin\Debug\net7.0\nunit.framework.dll
+C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blazingChat\bin\Debug\net7.0\NUnit3.TestAdapter.dll
+C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blazingChat\bin\Debug\net7.0\NUnit3.TestAdapter.pdb
+C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blazingChat\bin\Debug\net7.0\nunit.engine.dll
+C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blazingChat\bin\Debug\net7.0\nunit.engine.api.dll
+C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blazingChat\bin\Debug\net7.0\nunit.engine.core.dll
+C:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\Selenium_C#\blazingChat\bin\Debug\net7.0\testcentric.engine.metadata.dll

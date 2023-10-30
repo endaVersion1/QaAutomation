@@ -5,11 +5,17 @@
     <classes>
       <class name="com.blazinchat.BlazingTest">
         <methods>
-          <include name="testOpenLogIn"/>
+          <include name="testLogIn"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.blazinchat.BlazingTest -->
+      <class name="com.blazinchat.ApiTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testAPiPutUser"/>
+        </methods>
+      </class> <!-- com.blazinchat.ApiTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
