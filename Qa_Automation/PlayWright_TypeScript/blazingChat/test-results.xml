@@ -1,71 +1,29 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="44.603265">
-<testsuite name="VisualRegression.spec.ts" timestamp="2023-10-26T08:15:37.153Z" hostname="Chrome" tests="1" failures="1" skipped="0" time="10.972" errors="0">
-<testcase name="Open blazing Chat › Open page and Wait" classname="VisualRegression.spec.ts" time="10.972">
-<failure message="VisualRegression.spec.ts:5:9 Open page and Wait" type="FAILURE">
-<![CDATA[  [Chrome] › VisualRegression.spec.ts:5:9 › Open blazing Chat › Open page and Wait ─────────────────
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="11.077521">
+<testsuite name="MockedApiTest.spec.ts" timestamp="2023-10-31T09:19:04.849Z" hostname="Chrome" tests="1" failures="1" skipped="0" time="9.884" errors="0">
+<testcase name="Open Blazing Chat › Login in and Mock Contacts" classname="MockedApiTest.spec.ts" time="9.884">
+<failure message="MockedApiTest.spec.ts:9:9 Login in and Mock Contacts" type="FAILURE">
+<![CDATA[  [Chrome] › MockedApiTest.spec.ts:9:9 › Open Blazing Chat › Login in and Mock Contacts ────────────
 
-    Error: Screenshot comparison failed:
+    Error: Timed out 5000ms waiting for expect(locator).toContainText(expected)
 
-      Timeout 5000ms exceeded.
-
-    Expected: c:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\PlayWright_TypeScript\blazingChat\tests\VisualRegression.spec.ts-snapshots\Open-blazing-Chat-Open-page-and-Wait-1-Chrome-win32.png
-    Received: c:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\PlayWright_TypeScript\test-results\VisualRegression-Open-blazing-Chat-Open-page-and-Wait-Chrome\Open-blazing-Chat-Open-page-and-Wait-1-actual.png
-        Diff: c:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\PlayWright_TypeScript\test-results\VisualRegression-Open-blazing-Chat-Open-page-and-Wait-Chrome\Open-blazing-Chat-Open-page-and-Wait-1-diff.png
-
+    Locator: locator('href')
+    Expected string: "Enda Brody"
+    Received string: ""
     Call log:
-      - page._expectScreenshot with timeout 5000ms
-      -   verifying given screenshot expectation
-      - taking page screenshot
-      -   disabled all CSS animations
-      - 178423 pixels (ratio 0.20 of all image pixels) are different.
-      - waiting 100ms before taking screenshot
-      - taking page screenshot
-      -   disabled all CSS animations
-      - 177859 pixels (ratio 0.20 of all image pixels) are different.
-      - waiting 250ms before taking screenshot
-      - taking page screenshot
-      -   disabled all CSS animations
-      - 31309 pixels (ratio 0.04 of all image pixels) are different.
-      - waiting 500ms before taking screenshot
-      - taking page screenshot
-      -   disabled all CSS animations
-      - 85136 pixels (ratio 0.10 of all image pixels) are different.
-      - waiting 1000ms before taking screenshot
-      - Timeout 5000ms exceeded.
+      - expect.toContainText with timeout 5000ms
+      - waiting for locator('href')
 
 
-       7 |       await page.getByRole('button', { name: 'Login' }).click();
-       8 |       await page.waitForURL('https://www.blazingchat.com/profile');
-    >  9 |       await expect(page).toHaveScreenshot();
-         |                          ^
-      10 |       await page.pause();
-      11 |     });
-      12 | });
+      26 |
+      27 |         // Use 'expect' to make assertions about the page content
+    > 28 |         await expect(page.locator('href')).toContainText('Enda Brody'); 
+         |                                            ^
+      29 |     });
+      30 | });
 
-        at c:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\PlayWright_TypeScript\blazingChat\tests\VisualRegression.spec.ts:9:26
-
-    attachment #1: Open-blazing-Chat-Open-page-and-Wait-1-expected.png (image/png) ─────────────────
-    tests\VisualRegression.spec.ts-snapshots\Open-blazing-Chat-Open-page-and-Wait-1-Chrome-win32.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: Open-blazing-Chat-Open-page-and-Wait-1-actual.png (image/png) ───────────────────
-    ..\test-results\VisualRegression-Open-blazing-Chat-Open-page-and-Wait-Chrome\Open-blazing-Chat-Open-page-and-Wait-1-actual.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: Open-blazing-Chat-Open-page-and-Wait-1-diff.png (image/png) ─────────────────────
-    ..\test-results\VisualRegression-Open-blazing-Chat-Open-page-and-Wait-Chrome\Open-blazing-Chat-Open-page-and-Wait-1-diff.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
+        at c:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\PlayWright_TypeScript\blazingChat\tests\MockedApiTest.spec.ts:28:44
 ]]>
 </failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|tests\VisualRegression.spec.ts-snapshots\Open-blazing-Chat-Open-page-and-Wait-1-Chrome-win32.png]]
-
-[[ATTACHMENT|..\test-results\VisualRegression-Open-blazing-Chat-Open-page-and-Wait-Chrome\Open-blazing-Chat-Open-page-and-Wait-1-actual.png]]
-
-[[ATTACHMENT|..\test-results\VisualRegression-Open-blazing-Chat-Open-page-and-Wait-Chrome\Open-blazing-Chat-Open-page-and-Wait-1-diff.png]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
 </testsuites>
