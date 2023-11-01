@@ -19,7 +19,7 @@ Terminal command to Install and run tests
 
   mvn test -- to just run the tests
 
-# Selenium C# (With Specflow)
+# Selenium C# 
 You will need .Net 
 https://dotnet.microsoft.com/en-us/download
 terminal command to run tests 
@@ -77,4 +77,24 @@ https://playwright.dev/docs/test-assertions
 https://docs.cypress.io/api/table-of-contents
 
 https://www.selenium.dev/documentation/webdriver/elements/locators/
+
+**Vs Code Usful Exteions**
+.Net Core Test Explorer
+.NET Extention Pack
+c#
+C# DEV KIT
+Debugger for Java
+Maven for Java
+Nuit Test Runner
+Playwright Test For Vs Code
+Playwright Test Runner
+
+
+![image](https://github.com/endaVersion1/QaAutomation/assets/122106008/7a56f752-ef12-443e-ba08-f135a93c5a5d)
+
+![image](https://github.com/endaVersion1/QaAutomation/assets/122106008/05ca3e6f-bf27-40f2-b6bd-2acb62a7a616)
+
+
+
+
 
