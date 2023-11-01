@@ -14,6 +14,15 @@ test.describe( 'Open blazing Chat', ()=> {
       await blazingChatPage.verifyAlertMessage();
     });
 
+    test(`Failing test Assert name that is not in Contacts`, async ({ page }) => {
+      const blazingChatPage = new BlazingChatPage(page);
+      await page.goto('https://www.blazingchat.com/');
+      await blazingChatPage.loginButton.click();
+      await expect(page).toHaveURL('https://www.blazingchat.com/profile');
+      await blazingChatPage.contacts.click();
+      expect(page.locator('href="chat1"').innerText()).toBe('Tom jones');
+    });
+
     //---Code Challenge Check Create account validation--
     test(`Create Account`, async ({ page }) => {
 

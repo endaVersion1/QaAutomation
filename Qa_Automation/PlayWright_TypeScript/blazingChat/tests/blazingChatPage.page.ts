@@ -4,12 +4,14 @@ export class BlazingChatPage{
     readonly page : Page;
     readonly loginButton: Locator;
     readonly uploadFile: Locator;
+    readonly contacts: Locator;
 
 
     constructor(page: Page){
         this.page = page;
         this.loginButton = page.getByRole('button', { name: 'Login' });
         this.uploadFile =  page.locator('input[type="file"]');
+        this.contacts = page.locator("//a[normalize-space()='Contacts']");
     }
 
     async uploadPicture(file) {

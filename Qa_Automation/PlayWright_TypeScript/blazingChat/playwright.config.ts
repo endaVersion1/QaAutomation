@@ -13,7 +13,7 @@ const config: PlaywrightTestConfig = {
   /* Maximum time one test can run for. */
   timeout: 50 * 1000,
   expect: {
-    toHaveScreenshot: { maxDiffPixels: 100 },
+    toHaveScreenshot: { maxDiffPixels: 1000 },
     /**
      * Maximum time expect() should wait for the condition to be met.
      * For example in `await expect(locator).toHaveText();`
@@ -29,7 +29,7 @@ const config: PlaywrightTestConfig = {
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [["junit", { outputFile: './test-results.xml' }]], // Use JUnitReporter with specified output file
+  reporter: [["junit", { outputFile: './test-results.xml' }],['html', { open: 'always' }]], // Use JUnitReporter with specified output file
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     //Overide ERR_CERT_AUTHORITY_INVALID

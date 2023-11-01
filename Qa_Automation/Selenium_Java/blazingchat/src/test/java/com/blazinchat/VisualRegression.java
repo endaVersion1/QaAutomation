@@ -15,7 +15,9 @@ public class VisualRegression {
     @BeforeMethod
     public void setUp() {
         // Set the path to the ChromeDriver executable
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        System.setProperty(
+                "webdriver.chrome.driver",
+                "webdriver/chromedriver.exe");
 
         // Create a new ChromeDriver instance
         driver = new ChromeDriver();

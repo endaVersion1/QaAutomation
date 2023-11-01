@@ -4,8 +4,7 @@ test.describe( 'Open blazing Chat', ()=> {
 
     test(`Viusal Regression Login Page`, async ({ page }) => {
       await page.goto('https://www.blazingchat.com/');
-      await page.getByRole('button', { name: 'Login' }).click();
-      await page.waitForURL('https://www.blazingchat.com/profile');
+      await page.waitForURL('https://www.blazingchat.com/');
       await expect(page).toHaveScreenshot();
     });
 

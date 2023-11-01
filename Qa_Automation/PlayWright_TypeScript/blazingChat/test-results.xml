@@ -1,29 +1,6 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="11.077521">
-<testsuite name="MockedApiTest.spec.ts" timestamp="2023-10-31T09:19:04.849Z" hostname="Chrome" tests="1" failures="1" skipped="0" time="9.884" errors="0">
-<testcase name="Open Blazing Chat › Login in and Mock Contacts" classname="MockedApiTest.spec.ts" time="9.884">
-<failure message="MockedApiTest.spec.ts:9:9 Login in and Mock Contacts" type="FAILURE">
-<![CDATA[  [Chrome] › MockedApiTest.spec.ts:9:9 › Open Blazing Chat › Login in and Mock Contacts ────────────
-
-    Error: Timed out 5000ms waiting for expect(locator).toContainText(expected)
-
-    Locator: locator('href')
-    Expected string: "Enda Brody"
-    Received string: ""
-    Call log:
-      - expect.toContainText with timeout 5000ms
-      - waiting for locator('href')
-
-
-      26 |
-      27 |         // Use 'expect' to make assertions about the page content
-    > 28 |         await expect(page.locator('href')).toContainText('Enda Brody'); 
-         |                                            ^
-      29 |     });
-      30 | });
-
-        at c:\Users\BrodyE\Qa_Workshop_03_11_23\QaAutomation\Qa_Automation\PlayWright_TypeScript\blazingChat\tests\MockedApiTest.spec.ts:28:44
-]]>
-</failure>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="5.152545">
+<testsuite name="VisualRegression.spec.ts" timestamp="2023-11-01T07:49:53.451Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="3.599" errors="0">
+<testcase name="Open blazing Chat › Viusal Regression Login Page" classname="VisualRegression.spec.ts" time="3.599">
 </testcase>
 </testsuite>
 </testsuites>

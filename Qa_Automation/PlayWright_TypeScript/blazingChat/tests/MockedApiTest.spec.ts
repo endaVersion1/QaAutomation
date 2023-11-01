@@ -6,25 +6,19 @@ import * as data from '../../blazingChat/tests/data/contacts.json';
 const mock = data[0]; // Access the first element of the array
 
 test.describe('Open Blazing Chat', () => {
-    test('Login in and Mock Contacts', async ({ page }) => {
-        const blazingChatPage = new BlazingChatPage(page);
-        await page.goto('https://www.blazingchat.com/');
-        await blazingChatPage.loginButton.click();
-        await page.waitForURL('https://www.blazingchat.com/profile');
-        await page.pause();
-        await page.getByText('Contacts').click();
-        
-        await page.pause();
-        await page.route('https://blazingchatwebapi.azurewebsites.net/contacts/getvisiblecontacts?startIndex=0&count=18', (route) => {
+    test('Table of Attendees Mocked', async ({ page }) => {
+        //Need to declare your route as soon as the call is made
+        await page.route('http://localhost:4200/assets/mock-data.json', (route) => {
             route.fulfill({
                 status: 200,
                 contentType: 'application/json; charset=utf-8',
-                headers: { 'Access-Control-Allow-Origin': 'https://www.blazingchat.com' },
                 body: JSON.stringify([mock]),
             });
         });
 
-        // Use 'expect' to make assertions about the page content
-        await expect(page.locator('href')).toContainText('Enda Brody'); 
+        await page.goto('http://localhost:4200');
+        await expect(page.locator('td').nth(1)).toContainText('Enda Brody'); 
+
+        //---Code Challenge Add your own name to the mock response--
     });
 });

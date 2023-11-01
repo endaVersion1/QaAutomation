@@ -1,0 +1,10 @@
+npx playwright test --reporter=html
+
+npx playwright codegen https://www.blazingchat.com/
+
+//run the app
+ng serve
+
+https://restful-api.dev/
+
+https://eyes.applitools.com/app/test-results

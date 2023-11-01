@@ -1,20 +1,4 @@
 [
-    {
-        "userId": 1,
-        "emailAddress": "enda.brody@gmail.com",
-        "password": null,
-        "source": null,
-        "firstName": "Enda",
-        "lastName": "Brody",
-        "profilePictureUrl": null,
-        "dateOfBirth": "28/12/1992",
-        "aboutMe": "Gamer",
-        "notifications": null,
-        "darkTheme": null,
-        "createdDate": null,
-        "profilePicDataUrl": null,
-        "role": null,
-        "chatHistoryFromUsers": [],
-        "chatHistoryToUsers": []
-    }
-]
+    { "id": 1, "name": "Enda Brody" }
+  ]
+  

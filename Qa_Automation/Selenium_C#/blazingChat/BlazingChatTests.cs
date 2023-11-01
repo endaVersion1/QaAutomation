@@ -8,31 +8,32 @@ namespace blazingChat
     public class BlazingChatTests
     {
         private IWebDriver driver;
-
     [SetUp]
     public void Setup()
     {
-         // Set the path to the Chrome WebDriver executable
-            string chromeDriverPath = @"webdriver/chromedriver.exe"; // Replace with the actual path
+    // Set the path to the Chrome WebDriver executable
+    string chromeDriverPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "webdriver");
 
-            // Configure the Chrome options
-            ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--start-maximized"); // Maximize the browser window
+    // Configure the Chrome options
+    ChromeOptions options = new ChromeOptions();
+    options.AddArgument("--start-maximized"); // Maximize the browser window
 
-            // Initialize the Chrome WebDriver with the specified options
-            IWebDriver driver = new ChromeDriver(chromeDriverPath, options);
+    // Initialize the class-level driver field with the ChromeDriver instance
+    driver = new ChromeDriver(chromeDriverPath, options);
 
-            // Navigate to the specified URL
-            string url = "https://www.blazingchat.com/";
-            driver.Navigate().GoToUrl(url);
+    // Navigate to the specified URL
+    string url = "https://www.blazingchat.com/";
+    driver.Navigate().GoToUrl(url);
+    Thread.Sleep(TimeSpan.FromSeconds(20));
     }
 
     [Test]
     public void VerifyProfileHeader()
     {
          // Login
-            IWebElement loginButton = driver.FindElement(By.Id("button_login"));
+            IWebElement loginButton = driver.FindElement(By.XPath("//button[@id='button_login']"));
             loginButton.Click();
+            Thread.Sleep(TimeSpan.FromSeconds(20));
             IWebElement h2Element = driver.FindElement(By.TagName("h2"));
             string actualText = h2Element.Text;
             Assert.AreEqual("Profile", actualText);
