@@ -30,7 +30,7 @@ public class VisualRegression {
     @Test
     public void testVisualRegressionLoginPage() {
         // Open the website
-        driver.get("http://www.blazingchat.com");
+        driver.get("https://localhost:44323/");
 
         // Start the visual regression test
         eyes.open(driver, "Blazing Chat", "Login Page", new RectangleSize(800, 600));
@@ -45,7 +45,7 @@ public class VisualRegression {
     @Test
     public void testVisualRegressionCreateAccountPage(){
         // Open the website
-        driver.get("http://www.blazingchat.com");
+        driver.get("https://localhost:44323/");
     }
 
     @AfterMethod

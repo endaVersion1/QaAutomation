@@ -32,7 +32,7 @@ public class BlazingTest {
          driver.manage().window().maximize();
         
          // Open the website
-         driver.get("http://www.blazingchat.com");
+         driver.get("https://localhost:44323");
     }
 
     @Test

@@ -7,18 +7,18 @@ test.describe( 'Open blazing Chat', ()=> {
       const blazingChatPage = new BlazingChatPage(page);
       const profilePicture = '../../qa_cat.jpg'
 
-      await page.goto('https://www.blazingchat.com/');
+      await page.goto('https://localhost:44323/');
       await blazingChatPage.loginButton.click();
-      await expect(page).toHaveURL('https://www.blazingchat.com/profile');
+      await expect(page).toHaveURL('https://localhost:44323/profile');
       await blazingChatPage.uploadPicture(profilePicture);
       await blazingChatPage.verifyAlertMessage();
     });
 
     test(`Failing test Assert name that is not in Contacts`, async ({ page }) => {
       const blazingChatPage = new BlazingChatPage(page);
-      await page.goto('https://www.blazingchat.com/');
+      await page.goto('https://localhost:44323/');
       await blazingChatPage.loginButton.click();
-      await expect(page).toHaveURL('https://www.blazingchat.com/profile');
+      await expect(page).toHaveURL('https://localhost:44323/profile');
       await blazingChatPage.contacts.click();
       expect(page.locator('href="chat1"').innerText()).toBe('Tom jones');
     });

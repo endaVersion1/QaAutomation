@@ -22,7 +22,7 @@ namespace blazingChat
     driver = new ChromeDriver(chromeDriverPath, options);
 
     // Navigate to the specified URL
-    string url = "https://www.blazingchat.com/";
+    string url = "https://localhost:44323/";
     driver.Navigate().GoToUrl(url);
     Thread.Sleep(TimeSpan.FromSeconds(20));
     }
