@@ -34,7 +34,9 @@ https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomp
 dotnet build
 ![image](https://github.com/endaVersion1/QaAutomation/assets/122106008/a23c2b8e-e847-4ddc-bc4b-bab8a1cd029d)
 
-dotnet run (Testrs are in the main)
+dotnet run (Tests are in the main class)
+
+dotnet test or use the Extion on VS code
 
   
   
